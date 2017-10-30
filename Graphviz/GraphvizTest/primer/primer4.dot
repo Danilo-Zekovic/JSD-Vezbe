@@ -1,0 +1,11 @@
+digraph hierarchy{
+    node [color=Red,fontname=Courier,shape=box]   
+    edge [color=Blue, style=dashed]
+    nacelnik[label = "Načelnik", color = Green]
+    zamenik[label = "Zamenik načelnika"]
+    manager[label = "Menadžer"]
+    sluzbenik[label = "Službenik"]
+    sekretar[label = "Sekretar"]
+    nacelnik -> manager -> sluzbenik
+    nacelnik -> zamenik -> sekretar
+}

@@ -1,0 +1,25 @@
+digraph objectmodel{
+        node[shape=record];
+        rankdir="BT";
+        teacher [label = "{Nastavnik| +ime:String \n +prezime:String|\n}"];
+        course [label = "{Kurs|\n|\n}"];
+        student [label = "{Student|\n|\n}"];
+        lesson [label = "{Predavanja|\n|\n}"];
+        tutorial [label = "{Konsultacije|\n |\n}"];
+        assessment[label = "{Ocenjivanje|\n|\n}"];
+        coursework [label = "{Predispitne obaveze|\n|\n}"];
+        exam [label = "{Ispit|\n|\n }"];
+
+        {rank=same; teacher course student}
+
+        teacher->course [label="Predaje",arrowhead="none",
+        arrowtail="normal",headlabel="1",taillabel="1"];
+        student->course [label="Pohađa", arrowhead="none",
+        arrowtail="normal",headlabel="1",taillabel="1"];
+        lesson->course [arrowhead="diamond",arrowtail="normal"];
+        tutorial->course [arrowhead="diamond",arrowtail="normal"];
+        assessment->course [arrowhead="diamond",arrowtail="normal"];
+        coursework->assessment[arrowhead="onormal"];
+        exam->assessment[arrowhead="onormal"];
+
+}

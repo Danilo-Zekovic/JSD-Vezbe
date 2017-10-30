@@ -1,0 +1,5 @@
+digraph somegraph{
+    N [label = "Nastavnik"]
+    S [label = "Student"]
+    N -> S [label = " Predaje", fontcolor = green] 
+}

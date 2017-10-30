@@ -1,0 +1,23 @@
+digraph G {
+rankdir=BT;
+node [shape=record];
+subgraph "" {
+rank=same;
+Teacher [label="{Nastavnik|+ime:String \n+prezime:String|\n}"];
+Student [label="{Student|\n|\n}"];
+Course [label="{Kurs|\n|\n}"];
+}
+
+Lesson [label="{Predavanja|\n|\n}"];
+Tutorial [label="{Konsultacije|\n |\n}"];
+Assessment [label="{Ocenjivanje|\n|\n}"];
+Coursework [label="{Predispitne obaveze|\n|\n}"];
+Exam [label="{Ispit|\n|\n }"];
+Teacher -> Course  [arrowhead=none, arrowtail=normal, headlabel=1, label=Predaje, taillabel=1];
+Student -> Course  [arrowhead=none, arrowtail=normal, headlabel=1, label="Pohađa", taillabel=1];
+Lesson -> Course  [arrowhead=diamond, arrowtail=normal];
+Tutorial -> Course  [arrowhead=diamond, arrowtail=normal];
+Assessment -> Course  [arrowhead=diamond, arrowtail=normal];
+Coursework -> Assessment  [arrowhead=onormal];
+Exam -> Assessment  [arrowhead=onormal];
+}
