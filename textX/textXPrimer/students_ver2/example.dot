@@ -1,0 +1,24 @@
+
+    digraph xtext {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+140110399270528 -> 140110398726832 [label="groups:0" arrowtail=diamond dir=both]
+140110398726832 -> 140110398726440 [label="students:0" ]
+140110398726440[label="{ra2_2013:Student|+first_name:str='Petar'\l+surname:str='Petrovic'\l+year:int=4\l+grade_average:float=8.34\l}"]
+140110398726832 -> 140110398726888 [label="students:1" ]
+140110398726888[label="{ra4_2014:Student|+first_name:str='Jovana'\l+surname:str='Jovanovic'\l+year:int=3\l+grade_average:float=9.34\l}"]
+140110398726832 -> 140110398727224 [label="students:2" ]
+140110398727224[label="{ra1_2015:Student|+first_name:str='Mika'\l+surname:str='Mikic'\l+year:int=4\l+grade_average:float=9.23\l}"]
+140110398726832[label="{group1:StudentGroup|}"]
+140110399270528[label="{:Definition|}"]
+
+}

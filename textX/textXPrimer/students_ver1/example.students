@@ -1,0 +1,5 @@
+Group group1 {
+	Student ra2_2013 'Petar' 'Petrovic' 4 8.34;
+	Student ra4_2014 'Jovana' 'Jovanovic' 3 9.34;
+	Student ra1_2015 'Mika' 'Mikic' 4 9.23
+}

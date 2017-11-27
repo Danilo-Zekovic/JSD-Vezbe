@@ -1,0 +1,14 @@
+Structures:
+	structures += Structure
+	StructureElement+
+;
+
+Structure:
+	'structure' name = ID '{'
+	elements *= [StructureElement][';']	
+	'}'
+;
+
+StructureElement:
+	name = ID '=' value = BASETYPE
+;

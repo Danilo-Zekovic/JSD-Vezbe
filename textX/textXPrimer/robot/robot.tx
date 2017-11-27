@@ -1,0 +1,27 @@
+Program:
+	'begin'
+		commands *= Command
+	'end'
+;
+
+Command:
+	InitCommand | MoveCommand
+;
+
+InitCommand:
+	'init' xPos=INT ',' yPos = INT
+;
+
+MoveCommand:
+	direction=Direction (steps = INT)?
+;
+
+Direction:
+	'up'|'down'|'left'|'right'
+;
+
+Comment:
+ 	/\/\/.*$/
+;
+
+	

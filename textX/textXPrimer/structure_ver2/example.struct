@@ -1,0 +1,9 @@
+structure test{
+	element1;
+	element2;
+	element3
+}
+
+element1 = 2
+element2 = "nesto"
+element3 = true 

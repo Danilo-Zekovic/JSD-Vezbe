@@ -1,0 +1,19 @@
+Definition:
+	groups+=StudentGroup
+	Student+
+;
+
+StudentGroup:
+	'Group' name = ID '{'
+	students+= [Student|ID][';']
+	'}'
+;
+
+Student:
+	'Student'
+	name = ID
+	first_name = STRING
+	surname =STRING
+	year = INT
+	grade_average = FLOAT
+;

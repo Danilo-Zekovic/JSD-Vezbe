@@ -1,0 +1,22 @@
+Form:
+    "Form begin"
+    title=STRING
+    component *= Component
+    "Form end"
+;
+
+Component:
+    Button | Field
+;
+
+Button:
+    'button' name=ID text=STRING
+;
+
+Field:
+    'field' name=ID label=STRING componentType=ComponentType
+;
+
+ComponentType:
+    "TextField" | 'Combobox' | 'TextArea' | 'Checkbox'
+;

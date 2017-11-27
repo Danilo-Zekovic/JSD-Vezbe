@@ -1,0 +1,6 @@
+begin
+	init 1,2
+	up 2
+	down 3
+	left 4
+end

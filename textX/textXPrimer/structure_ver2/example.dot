@@ -1,0 +1,23 @@
+
+    digraph xtext {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    edge[dir=black,arrowtail=empty]
+
+
+53172544 -> 53200824 [label="structures:0" arrowtail=diamond dir=both]
+53200824 -> 53199704 [label="elements:0" ]
+53199704[label="{element1:StructureElement|+value:float=2.0\l}"]
+53200824 -> 53200880 [label="elements:1" ]
+53200880[label="{element2:StructureElement|+value:str=nesto\l}"]
+53200824 -> 53200936 [label="elements:2" ]
+53200936[label="{element3:StructureElement|+value:bool=True\l}"]
+53200824[label="{test:Structure|}"]
+53172544[label="{:Structures|}"]
+
+}
